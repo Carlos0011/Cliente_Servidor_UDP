@@ -7,14 +7,14 @@ public class ClienteUDP {
     public static void main(String args[]) throws Exception {
 		
         //CRIAR SOCKET
-		DatagramSocket tomada = new DatagramSocket();
+	DatagramSocket tomada = new DatagramSocket();
         
-		//OBTÉM INPUT
+	//OBTÉM INPUT
         System.out.print("\nDigite uma Mensagem: ");
         Scanner teclado = new Scanner(System.in);
         String mensagem = teclado.nextLine();
         
-		//CÓDIGO PARA ENVIAR UMA MENSAGEM AO SERVIDOR
+	//CÓDIGO PARA ENVIAR UMA MENSAGEM AO SERVIDOR
         byte[] cartaAEnviar = new byte[100];
         cartaAEnviar = mensagem.getBytes();
         InetAddress ip = InetAddress.getByName("127.0.0.1");
